@@ -1,0 +1,23 @@
+0. Spis treści
+1. Przebieg gry
+
+Utworzenie planszy
+Utworzenie 2 graczy
+Losowanie pokemonów
+Losowanie kto pierwszy
+Kolejka az do konca
+
+2.
+
+
+InputStream stream = PokeDuel.class.getResourceAsStream("Database.txt");
+        Scanner sc = new Scanner(stream);
+        while (sc.hasNext())
+                {
+                    System.out.println(sc.nextLine());
+                }
+
+ 
+
+
+
