@@ -5,6 +5,8 @@
  */
 package pokeduel;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -14,26 +16,38 @@ import java.util.Random;
 public class Player {
 
     String name;
-    Pokemon deck[] = new Pokemon[20];
-//    Pokemon hand[] = new Pokemon[5];
+    List<Pokemon> deck = new ArrayList<Pokemon>();
+    int score = 0;
 
+    //       Pokemon hand[] = new Pokemon[5];
+    
+    
+
+    // Konstruktor
     Player(String name) {
         this.name = name;
         randDeck();
         showDeck();
     }
-
+    
+    // Metody
     final void randDeck() {
         Random r = new Random();
-        for (int i = 0; i < deck.length; i++) {
-            deck[i] = Database.array.get(r.nextInt(9));
+        for (int i = 0; i < 20; i++) {
+            deck.add(Database.array.get(r.nextInt(Database.array.size())));
         }
 
     }
-    final void showDeck()
-    {
-        for (int i = 0; i < deck.length; i++) {
-            deck[i].describe();
+    final void showDeck() {
+        for (int i = 0; i < deck.size(); i++) {
+            deck.get(i).describe();
         }
+    }
+    Pokemon choosePokemon(){      
+        Random r = new Random();
+        int number = r.nextInt(deck.size());
+        Pokemon current = deck.get(number);
+        deck.remove(number);
+        return current;
     }
 }

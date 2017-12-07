@@ -18,9 +18,8 @@ public abstract class Database {
 
     static List<Pokemon> array = new ArrayList<Pokemon>();
     
-
-    static void fullfilArray() {
-        InputStream stream = Database.class.getResourceAsStream("Database.db");
+    static void createDB() {
+        InputStream stream = Database.class.getResourceAsStream("/database/Pokemon.db");
         Scanner sc = new Scanner(stream);
         
         while (sc.hasNext()) {
@@ -29,6 +28,7 @@ public abstract class Database {
             int number = Integer.parseInt(parts[0]);
             array.add(new Pokemon(number, parts[1], parts[2], parts[3]));
         }
+        
     }
 
 }

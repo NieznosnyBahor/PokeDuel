@@ -18,11 +18,10 @@ public class Pokemon {
 //    boolean isPokemon;
 //    boolean isZapper;
 
-    Pokemon(int number) {
+    Pokemon(int number)                                           {
     
     }
-    Pokemon(int number, String name, String type_1, String type_2)
-    {
+    Pokemon(int number, String name, String type_1, String type_2){
         this.number = number;
         this.name = name;
         this.type_1 = type_1;
