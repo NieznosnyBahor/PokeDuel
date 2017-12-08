@@ -34,7 +34,7 @@ public class Player {
     final void randDeck() {
         Random r = new Random();
         for (int i = 0; i < 20; i++) {
-            deck.add(Database.array.get(r.nextInt(Database.array.size())));
+            deck.add(Database.pokemonArray.get(r.nextInt(Database.pokemonArray.size())));
         }
 
     }

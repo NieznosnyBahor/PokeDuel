@@ -5,8 +5,7 @@
  */
 package pokeduel;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.io.IOException;
 
 /**
  *
@@ -17,12 +16,11 @@ public class PokeDuel {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Database.createDB();
         Game.start();
         Game.showResults();
-
     }
 
 }

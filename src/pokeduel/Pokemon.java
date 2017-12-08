@@ -30,11 +30,12 @@ public class Pokemon {
 
     void describe() {
         System.out.println("... ... ...");
-        System.out.println(number);
-        System.out.println(name);
-        System.out.println(type_1);
+        System.out.println(number + " " + name);
+        System.out.print(type_1 + " ");
         if(!"null".equals(type_2))
             System.out.println(type_2);
+        else
+            System.out.println("");
     }
     
     

@@ -1,18 +1,18 @@
-Normal
-Flying
-Poison
-Ground
-Rock
-Bug
-Ghost
-Fire
-Water
-Grass
-Electro
-Psycho
-Ice
-Dark
-Fairy
-Fight
-Steel
-Dragon
+Normal	null
+Flying	Grass Fight Bug
+Poison	Grass Fairy
+Ground	Fire Electro Poison Rock Steel
+Rock	Fire Ice Flying Bug
+Bug	Grass Psycho Dark
+Ghost	Psycho Ghost
+Fire	Grass Ice Bug Steel
+Water	Fire Ground Rock
+Grass	Water Ground Rock
+Electro	Water Flying
+Psycho	Fight Poison
+Ice	Grass Ground Flying Dragon
+Dark	Psycho Ghost
+Fairy	Fight Dragon Dark
+Fight	Normal Ice Rock Dark Steel
+Steel	Ice Rock Fairy
+Dragon	Dragon

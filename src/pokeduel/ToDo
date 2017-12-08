@@ -22,7 +22,7 @@ InputStream stream = PokeDuel.class.getResourceAsStream("Database.txt");
         Integer[] array1 = {1,2,3};
         Integer[] array2 = {1,2,3};
         
-        Map<String, Integer[]> Oceny = new HashMap<String, Integer[]>();
+        
         Oceny.put("Matematyka", array1);
         Oceny.put("Polski", array2);
 
